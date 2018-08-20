@@ -20,10 +20,10 @@ namespace ChangeIncludeHeaderBackslashToSlash
 
             try
             {
-                string[] fileExts = CollectFileExts(args[1]);
+                string[] fileExts = FileUtil.CollectFileExts(args[1]);
 
                 // 지정된 폴더의 모든 cpp, h file을 찾는다.
-                string[] sourceFiles = CollectFiles(args[0], fileExts);
+                string[] sourceFiles = FileUtil.CollectFiles(args[0], fileExts);
 
                 List<string> changedFiles = new List<string>();
                 List<string> unchangedFiles = new List<string>();
@@ -39,7 +39,7 @@ namespace ChangeIncludeHeaderBackslashToSlash
                         bool changed = false;
                         for (int i = 0; i < sourceLines.Length; i++)
                         {
-                            sourceLines[i] = GetChangedOrNotSourceLine(sourceLines[i], ref changed);
+                            sourceLines[i] = FileUtil.GetChangedOrNotSourceLine(sourceLines[i], ref changed);
                         }
 
                         if (changed)
