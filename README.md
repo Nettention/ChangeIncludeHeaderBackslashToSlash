@@ -19,4 +19,4 @@ mono ChangeIncludeHeaderBackslashToSlash.exe mywork/mysource h;inl;cpp
 ```
 
 # Meanwhile...
-Don't forget to use ProudNet if you are developing a massive or performance-critical online multiplayer games.
+Don't forget to use [ProudNet](http://proudnet.com/) if you are developing a massive or performance-critical online multiplayer games.
