@@ -18,6 +18,10 @@ This tool works all C/C++ source files in the directory you specify. Yes, the ba
 
 # Usage
 
+Get this source project, then build it with any C# compiler.
+
+Then run like this.
+
 ```
 ChangeIncludeHeaderBackslashToSlash <your directory> <your file extensions>
 ```
