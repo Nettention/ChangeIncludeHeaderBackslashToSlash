@@ -1,8 +1,23 @@
 # ChangeIncludeHeaderBackslashToSlash
 
 This tool changes backslash symbol to slash symbol in your C or C++ include header file statement.
+For example,
+
+```
+#include "aa\bb.h"
+```
+
+will be changed to 
+
+```
+#include "aa/bb.h"
+```
+
+This tool works all C/C++ source files in the directory you specify. Yes, the batch work.
+
 
 # Usage
+
 ```
 ChangeIncludeHeaderBackslashToSlash <your directory> <your file extensions>
 ```
